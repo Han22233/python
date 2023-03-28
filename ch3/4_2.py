@@ -57,6 +57,7 @@ print("hello\nworld")
 print("aaaaaaa\vbbbbbbbb\vcccccccc")
 print("aaaaaaa\"bbbbbbbb\"cccccccc")
 '''
+'''
 str_var = "하하하하"
 #type(str_var) => str
 str_var.replace('하','호')
@@ -65,4 +66,14 @@ print(str_var)
 
 str_var2= "안녕하세요.파이썬. 파이썬 수업입니다."
 str_var3 = str_var2.replace("파이썬","자바")
-print(str_var3)
+print("str_var2",str_var2)
+print("str_var3",str_var3)
+
+str_var4= "안녕하세요.파이썬. 파이썬파이썬. 파이썬파이썬. 파이썬파이썬. 파이썬파이썬. 파이썬 수업입니다."
+print(str_var4.replace("파이썬","자바",5))
+'''
+test = input('실수를 입력 하세요')
+test = test.replace('.','')
+sum = int(test[0]) + int(test[1]) +int(test[2]) +int(test[3]) +int(test[4]) +int(test[5]) 
+
+print(sum)
