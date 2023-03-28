@@ -49,11 +49,20 @@ print('python'[::-1])
 print('python'[5:0:-1])
 print('python'[-1:-7:-1])
 '''
-
+'''
 print("ab"+"\b"+"c")
 
 print("hello\nworld")
 
 print("aaaaaaa\vbbbbbbbb\vcccccccc")
 print("aaaaaaa\"bbbbbbbb\"cccccccc")
+'''
+str_var = "하하하하"
+#type(str_var) => str
+str_var.replace('하','호')
+print(str_var.replace('하','호'))
+print(str_var)
 
+str_var2= "안녕하세요.파이썬. 파이썬 수업입니다."
+str_var3 = str_var2.replace("파이썬","자바")
+print(str_var3)
