@@ -190,6 +190,7 @@ print(f1 is wishlist)
 
 #deep copy
 f2 = f1[:] # == 0 ~ len()-1
+f3 = list(f2) # 이것도 deep copy , .copy() method 혼자 공부하기 
 print("deep copy")
 print('f1       :',f1)
 print('f2       :',f2)
