@@ -74,7 +74,7 @@ print(season.popitem()) # 제일 마지막에 있는 item 제거
 # tuple -> list 유자차 추가 => tuple 변경 
 # list -> tuple 수강신청 전 수강생 변경 => tuple
 # tuple, list => dictionary (1,2,3,4) , (홍,김,박,이)
-
+'''
 seql = ['a','b','c','d','e']
 
 # list에서 tuple로 변환 
@@ -90,3 +90,42 @@ print(type(seql2))
 seqd = dict(enumerate(seql))
 print(seqd)
 print(type(seqd))
+
+# zip 
+# list,tuple이 여러개가 있을 때 튜플의 조합으로 된 하나의 리스트로 만듦 
+# => [('1조', '홍', '최'), ('2조', '김', '박'), ('3조', '이', '정')] 
+l1 = ['1조','2조','3조']
+YA = ['홍','김','이']
+YB = ['최','박','정']
+
+z = zip(l1, YA, YB)
+print(type(z))
+print(z)
+print(list(z))
+#tuple(z)는 불가능 
+print(tuple(zip(l1,YA,YB)))
+
+# 개수가 다를 경우에 제일 짧은 리스트의 길이 만큼만 튜플 생성 , 전가복 , 국수나무, 짜장면은 무시 됨 
+l10 = ['한식',    '양식']#,    '중식',  '분식'] 
+l11 = ['전주식당','닥터로빈','전가복', '국수나무']
+l12 = ['제육',    '파스타',  '짜장면']#,'돈까스']
+
+lunchz = zip('ABCD',l10,l11,l12)
+lunchl = list(lunchz)
+print(lunchl)
+
+for i in lunchl :
+    print(i[0],i[1],i[2],i[3])
+
+la = ['한식',    '양식',    '중식',  '분식'] 
+lb = ['전주식당','닥터로빈','전가복', '국수나무']
+lc = ['제육',    '파스타',  '짜장면','돈까스']
+print(dict(zip(la,lb))) 
+# print(dict(zip(la,lb,lc))) 불가능, dictionary는 key와 value 두 개의 값밖에 없기 때문  
+print(dict(zip(la,(lb,lc)))) # 가능
+'''
+#enumarte는 하기와 같이 인덱스 붙여줌 
+#        0        1        2         3
+l = ['전주식당','닥터로빈','전가복', '국수나무']
+print(list(enumerate(l)))
+print(dict(enumerate(l)))
