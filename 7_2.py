@@ -63,7 +63,30 @@ for k,v in season.items():
     print(k,end=' ')
     print(v,end=' ')    
 '''
+'''
 season = {1:'1월',2:'2월',3:'3월',4:'4월',5:'5월',6:'6월',
           7:'7월',8:'8월',9:'9월',10:'10월',11:'11월',12:'12월'}
 print(season.pop(0)) #  index에 있는 item을 제거 
 print(season.popitem()) # 제일 마지막에 있는 item 제거
+'''
+# dictionary-tuple-list 변환 
+# tuple - 변경불가, 수정 X (아메, 핫초코, 라떼)
+# tuple -> list 유자차 추가 => tuple 변경 
+# list -> tuple 수강신청 전 수강생 변경 => tuple
+# tuple, list => dictionary (1,2,3,4) , (홍,김,박,이)
+
+seql = ['a','b','c','d','e']
+
+# list에서 tuple로 변환 
+seqt = tuple(seql)
+print(seqt)
+print(type(seqt))
+
+# tuple에서 list로 다시 변환 
+seql2 = list(seqt)
+print(type(seql2))
+
+# list에서 dictionary로 변환 
+seqd = dict(enumerate(seql))
+print(seqd)
+print(type(seqd))
