@@ -126,6 +126,24 @@ print(dict(zip(la,(lb,lc)))) # 가능
 '''
 #enumarte는 하기와 같이 인덱스 붙여줌 
 #        0        1        2         3
+'''
 l = ['전주식당','닥터로빈','전가복', '국수나무']
 print(list(enumerate(l)))
 print(dict(enumerate(l)))
+'''
+
+l21 = ['Vue.js','python','Oracle','Java','Arduino','C']
+l22 = [313,214,213,315,210,313]
+
+d20 = dict(zip(l21,l22))
+while True :
+    class_name = input('강의명을 입력하세요') 
+    if class_name == 'quit' :
+        print('프로그램 종료')
+        break 
+    else : 
+        if class_name in d20.keys() : 
+            print(d20[class_name]) 
+        else : 
+            continue
+    
