@@ -20,10 +20,12 @@ print(d2)
 print(d2['수강생'])
 print(len(d2))
 '''
+'''
 # dictionary 생성 key:value 1:1월 ... ~ 12:12월 
 # for문 사용하여 각각의 value를 print하여라 
 season = {1:'1월',2:'2월',3:'3월',4:'4월',5:'5월',6:'6월',
           7:'7월',8:'8월',9:'9월',10:'10월',11:'11월',12:'12월'}
+'''
 '''
 1) key 값이 숫자인 것을 활용 
 for i in range(1,13) : 
@@ -42,7 +44,7 @@ print(season.values()) # dictionary의 모든 value 리스트 형태로 반환
 print(season.items()) # dictionary의 key,value로 구성된 튜플의 리스트 형태로 반환
 '''
 '''
-3) seanson.key() 활용
+3) seanson.keys() 활용
 for i in season.keys() :
     print(i,end=' ') 
     print(season[i], end=' ')
@@ -61,3 +63,7 @@ for k,v in season.items():
     print(k,end=' ')
     print(v,end=' ')    
 '''
+season = {1:'1월',2:'2월',3:'3월',4:'4월',5:'5월',6:'6월',
+          7:'7월',8:'8월',9:'9월',10:'10월',11:'11월',12:'12월'}
+print(season.pop(0)) #  index에 있는 item을 제거 
+print(season.popitem()) # 제일 마지막에 있는 item 제거
