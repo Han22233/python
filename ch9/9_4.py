@@ -21,4 +21,7 @@ lst1 = [1,2,3,4,5,6,7]
 lst2 = list(map(lambda x : x+1 , lst1)) # lst1 대신 [1,2,3,4,5,6,7] 사용 가능 
 print(lst2)
 
-
+l1 = [1,2,3,4,5,6,7]
+l2 = [1,2,3,4,5,6,7]
+l3 = list(map(lambda x,y : x+y,l1,l2))
+print(l3)
